@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*header*/
+header{
+    height: 50px;
+    background-color: deepskyblue;
+    font-family: sans-serif;
+    padding-left: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+header h3 span{
+    color: teal;
+}
+/*header*/
+
+/***global classes for transitions***/
+.back{
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s ease;
+}
+.up{
+    transform: translateX(0%);
+    opacity: 1;
+    visibility: visible;
+    transition: .8s ease;
+}
+/***global classes for transitions***/
+
+/*****container data****/
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.container .modules{
+    width: 20%;
+    margin-left:20px;
+}
+.container .modules p{
+    font-family: sans-serif;
+    background-color: deepskyblue;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    color:white;
+}
+.container .modules .module button{
+    outline: none;
+    background-color: skyblue;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    font-family: sans-serif;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: .4s ease;
+}
+.container .modules .module button:hover{
+    background-color: deepskyblue;
+    color: white;
+}
+.container .exams .exam{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 100vh; 
+}
+.container .exams .exam .exam_emploi{
+    padding: 20px;
+    width: 180px;
+    font-family: sans-serif;
+    margin:20px;
+    border-radius: 10px;
+    background-color: deepskyblue;
+    position: relative;
+    box-shadow:2px 2px 10px rgba(0,0,0,0.5),-2px -2px 10px rgba(0,0,0,0.5);
+    transition: .4s ease;
+}
+.container .exams .exam .exam_emploi:hover{
+    transform: scale(1.1);
+
+}
+.container .exams .exam .exam_emploi p:first-child{
+    position: absolute;
+    top: 0;
+    left:-5%;
+    background-color: skyblue;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    z-index:10;
+}
+.container .exams .exam .exam_emploi p:nth-child(2){
+    position: relative;
+    left:50%;
+    width: 80px;
+    text-align: center;
+    background-color: skyblue;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.container .exams .exam .exam_emploi p:nth-child(3){
+    font-size: 20px;
+    text-decoration: underline;
+}
+.container .exams .exam .exam_emploi p:last-child{
+    font-size: 20px;
+    text-decoration: underline;
+}
+.container .exams .exam .exam_emploi p:last-child span{
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
+    background-color: skyblue;
+    border-radius: 10px;
+    padding:3px 10px;
+}
+/****container data****/
+
+/*footer*/
+footer{
+    width: 100%;
+    background-color: deepskyblue;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding:10px 0;
+    margin-top: 10px;
+}
+/*footer*/
+
+/*css for other devices*/
+@media screen and (max-width:1200px){
+    .container .items{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:800px){
+    .container .items{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:425px){
+    .container .items{
+        width: 80%;
+    }
+}
+/*css for other devices*/
