@@ -1,0 +1,148 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.log_container{
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/ensa.jpg);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px 0;
+}
+.log_container .admin_desc{
+    width: 60%;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding:0 10px ;
+}
+.log_container .admin_desc h1 span{
+    color: teal;
+}
+.form_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.form_section .form_content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid skyblue;
+    padding: 50px;
+    box-shadow: 5px 5px 35px rgba(88, 185, 241, 0.5),
+    -5px -5px 35px rgba(88, 185, 241, 0.5);
+    border-radius: 10px;
+    color: white;
+}
+
+.form_section .form_content a{
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 20px;
+    top: 90%;
+    left: 70%;
+}
+
+.form_section .form_input{
+    padding: 20px 0;
+    position: relative;
+}
+
+.form_section .form_input label{
+    position: absolute;
+    top: 30%;
+    left:0;
+    pointer-events: none;
+    transition: .5s ease;
+}
+
+.form_section .form_input input{
+    border: none;
+    border-bottom: 2px solid white;
+    outline:none;
+    font-size: 20px;
+    font-family: sans-serif;
+    background-color: transparent;
+    transition: .5s ease;
+    color: white;
+}
+
+.form_section .form_input input:focus,
+.form_section .form_input input:valid{
+    border-bottom: 2px solid rgba(88, 185, 241, 0.5);
+    transition: .5s ease;
+}
+
+.form_section .form_input input:focus + label,
+.form_section .form_input input:valid + label{
+    color: rgba(88, 185, 241, 0.5);
+    transform: translateY(-100%);
+    transition: .5s ease;
+}
+
+.form_section input[type="submit"]{
+    padding: 4px 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid white;
+    color: black;
+    cursor: pointer;
+    transition: .5s ease;
+    outline: none;
+}
+
+.form_section input[type="submit"]:hover{
+    background-color:deepskyblue;
+    color: white;
+    border: 2px solid deepskyblue;
+}
+
+.error_login{
+    background-color: deepskyblue;
+    top: 30%;
+    color: white;
+    font-size: 15px;
+    font-family:sans-serif;
+    padding: 1px 15px;
+    border-radius:5px;
+    margin-bottom: 10px;
+    border: 2px solid skyblue;
+    box-shadow: 5px 5px 35px rgba(88, 185, 241, 0.5),
+    -5px -5px 35px rgba(88, 185, 241, 0.5);
+}
+
+
+.show_pass{
+    position: absolute;
+    right:0%;
+    top: 30%;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.show_pass i{
+    transition: .4s ease;
+}
+.show_pass i:hover{
+    color: deepskyblue;
+}
